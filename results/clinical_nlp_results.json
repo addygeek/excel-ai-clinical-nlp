@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-11T00:25:00",
+    "input_length": 855,
+    "model": "BioClinicalBERT + Rule-based"
+  },
+  "input_text": "\nPatient Report:\nThe patient was involved in a car accident three weeks ago. They hit their head on the \nsteering wheel and experienced immediate neck pain and back pain. The patient went to \nCity Hospital Accident and Emergency where they were examined. X-rays were taken and \nthe doctor diagnosed a whiplash injury and lower back strain.\n\nThe patient has been attending physiotherapy sessions - they've completed ten sessions \nso far. They've also been taking painkillers regularly for the discomfort. The neck \nstiffness has improved significantly, and their range of motion in the cervical and \nlumbar spine is nearly back to normal.\n\nThe physiotherapist said the patient is making good progress and expects them to make \na full recovery within six months. There should be no long-term damage from the soft \ntissue injuries sustained in the accident.\n",
+  "entities": [
+    {
+      "text": "whiplash injury",
+      "type": "DIAGNOSIS",
+      "confidence": 0.85,
+      "start_char": 301,
+      "end_char": 316,
+      "method": "rule-based"
+    },
+    {
+      "text": "physiotherapy",
+      "type": "TREATMENT",
+      "confidence": 0.85,
+      "start_char": 372,
+      "end_char": 385,
+      "method": "rule-based"
+    },
+    {
+      "text": "full recovery",
+      "type": "PROGNOSIS",
+      "confidence": 0.85,
+      "start_char": 728,
+      "end_char": 741,
+      "method": "rule-based"
+    },
+    {
+      "text": "lower back strain",
+      "type": "DIAGNOSIS",
+      "confidence": 0.7999999999999999,
+      "start_char": 321,
+      "end_char": 338,
+      "method": "rule-based"
+    },
+    {
+      "text": "within six months",
+      "type": "PROGNOSIS",
+      "confidence": 0.7999999999999999,
+      "start_char": 742,
+      "end_char": 759,
+      "method": "rule-based"
+    },
+    {
+      "text": "no long-term damage",
+      "type": "PROGNOSIS",
+      "confidence": 0.7999999999999999,
+      "start_char": 777,
+      "end_char": 796,
+      "method": "rule-based"
+    },
+    {
+      "text": "the patient went to city hospital accident and emergency",
+      "type": "FACILITY",
+      "confidence": 0.7999999999999999,
+      "start_char": 171,
+      "end_char": 228,
+      "method": "rule-based"
+    },
+    {
+      "text": "neck pain",
+      "type": "SYMPTOM",
+      "confidence": 0.7,
+      "start_char": 146,
+      "end_char": 155,
+      "method": "rule-based"
+    },
+    {
+      "text": "back pain",
+      "type": "SYMPTOM",
+      "confidence": 0.7,
+      "start_char": 160,
+      "end_char": 169,
+      "method": "rule-based"
+    },
+    {
+      "text": "discomfort",
+      "type": "SYMPTOM",
+      "confidence": 0.7,
+      "start_char": 492,
+      "end_char": 502,
+      "method": "rule-based"
+    },
+    {
+      "text": "stiffness",
+      "type": "SYMPTOM",
+      "confidence": 0.7,
+      "start_char": 514,
+      "end_char": 523,
+      "method": "rule-based"
+    },
+    {
+      "text": "pain",
+      "type": "SYMPTOM",
+      "confidence": 0.7,
+      "start_char": 151,
+      "end_char": 155,
+      "method": "rule-based"
+    },
+    {
+      "text": "painkillers",
+      "type": "TREATMENT",
+      "confidence": 0.7,
+      "start_char": 462,
+      "end_char": 473,
+      "method": "rule-based"
+    },
+    {
+      "text": "head",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 92,
+      "end_char": 96,
+      "method": "rule-based"
+    },
+    {
+      "text": "steering wheel",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 105,
+      "end_char": 119,
+      "method": "rule-based"
+    },
+    {
+      "text": "neck",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 146,
+      "end_char": 150,
+      "method": "rule-based"
+    },
+    {
+      "text": "back",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 160,
+      "end_char": 164,
+      "method": "rule-based"
+    },
+    {
+      "text": "cervical",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 585,
+      "end_char": 593,
+      "method": "rule-based"
+    },
+    {
+      "text": "lumbar",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 599,
+      "end_char": 605,
+      "method": "rule-based"
+    },
+    {
+      "text": "spine",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 606,
+      "end_char": 611,
+      "method": "rule-based"
+    },
+    {
+      "text": "range of motion",
+      "type": "ANATOMY",
+      "confidence": 0.7,
+      "start_char": 562,
+      "end_char": 577,
+      "method": "rule-based"
+    },
+    {
+      "text": "x-rays",
+      "type": "PROCEDURE",
+      "confidence": 0.7,
+      "start_char": 255,
+      "end_char": 261,
+      "method": "rule-based"
+    }
+  ],
+  "structured_summary": {
+    "symptoms": [
+      "neck pain",
+      "back pain",
+      "discomfort",
+      "stiffness",
+      "pain"
+    ],
+    "diagnosis": "whiplash injury and lower back strain",
+    "treatment": [
+      "physiotherapy",
+      "painkillers"
+    ],
+    "prognosis": "full recovery within six months no long-term damage",
+    "procedures": [
+      "x-rays"
+    ],
+    "anatomical_locations": [
+      "head",
+      "steering wheel",
+      "neck",
+      "back",
+      "cervical",
+      "lumbar",
+      "spine",
+      "range of motion"
+    ]
+  },
+  "soap_note": {
+    "subjective": "Patient reports car accident 3 weeks ago with neck and back pain",
+    "objective": "X-rays performed, improved range of motion in cervical and lumbar spine",
+    "assessment": "Whiplash injury and lower back strain",
+    "plan": "Continue physiotherapy, painkillers as needed, expect full recovery in 6 months"
+  },
+  "sentiment": {
+    "overall": "Cautiously Optimistic",
+    "score": 0.65,
+    "emotions": [
+      "concern",
+      "hope",
+      "relief"
+    ]
+  },
+  "intent": {
+    "primary": "Medical Documentation",
+    "confidence": 0.92
+  }
+}

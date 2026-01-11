@@ -1,0 +1,23 @@
+text,type,confidence,start_char,end_char,method
+whiplash injury,DIAGNOSIS,0.85,301,316,rule-based
+physiotherapy,TREATMENT,0.85,372,385,rule-based
+full recovery,PROGNOSIS,0.85,728,741,rule-based
+lower back strain,DIAGNOSIS,0.7999999999999999,321,338,rule-based
+within six months,PROGNOSIS,0.7999999999999999,742,759,rule-based
+no long-term damage,PROGNOSIS,0.7999999999999999,777,796,rule-based
+the patient went to city hospital accident and emergency,FACILITY,0.7999999999999999,171,228,rule-based
+neck pain,SYMPTOM,0.7,146,155,rule-based
+back pain,SYMPTOM,0.7,160,169,rule-based
+discomfort,SYMPTOM,0.7,492,502,rule-based
+stiffness,SYMPTOM,0.7,514,523,rule-based
+pain,SYMPTOM,0.7,151,155,rule-based
+painkillers,TREATMENT,0.7,462,473,rule-based
+head,ANATOMY,0.7,92,96,rule-based
+steering wheel,ANATOMY,0.7,105,119,rule-based
+neck,ANATOMY,0.7,146,150,rule-based
+back,ANATOMY,0.7,160,164,rule-based
+cervical,ANATOMY,0.7,585,593,rule-based
+lumbar,ANATOMY,0.7,599,605,rule-based
+spine,ANATOMY,0.7,606,611,rule-based
+range of motion,ANATOMY,0.7,562,577,rule-based
+x-rays,PROCEDURE,0.7,255,261,rule-based
